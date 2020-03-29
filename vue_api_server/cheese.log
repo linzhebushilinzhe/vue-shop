@@ -1,0 +1,161 @@
+[2020-01-06T22:11:52.975] [DEBUG] cheese - login => username:admin,password:123456
+[2020-01-06T22:11:52.978] [DEBUG] cheese - admin
+[2020-01-06T22:11:52.987] [DEBUG] cheese - { Error: ER_NO_SUCH_TABLE: Table 'mydb.sp_manager' doesn't exist
+    at Query.Sequence._packetToError (C:\Users\linzh\Desktop\vue_api_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\linzh\Desktop\vue_api_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\linzh\Desktop\vue_api_server\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\linzh\Desktop\vue_api_server\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\linzh\Desktop\vue_api_server\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\linzh\Desktop\vue_api_server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\linzh\Desktop\vue_api_server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\linzh\Desktop\vue_api_server\node_modules\mysql\lib\Connection.js:525:10)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+    --------------------
+    at Protocol._enqueue (C:\Users\linzh\Desktop\vue_api_server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (C:\Users\linzh\Desktop\vue_api_server\node_modules\mysql\lib\Connection.js:201:25)
+    at C:\Users\linzh\Desktop\vue_api_server\node_modules\orm\lib\Drivers\DML\mysql.js:231:9
+    at Ping.onOperationComplete (C:\Users\linzh\Desktop\vue_api_server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (C:\Users\linzh\Desktop\vue_api_server\node_modules\mysql\lib\Connection.js:525:10)
+    at Ping._callback (C:\Users\linzh\Desktop\vue_api_server\node_modules\mysql\lib\Connection.js:491:16)
+    at Ping.Sequence.end (C:\Users\linzh\Desktop\vue_api_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (C:\Users\linzh\Desktop\vue_api_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (C:\Users\linzh\Desktop\vue_api_server\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\linzh\Desktop\vue_api_server\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\linzh\Desktop\vue_api_server\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\linzh\Desktop\vue_api_server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\linzh\Desktop\vue_api_server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\linzh\Desktop\vue_api_server\node_modules\mysql\lib\Connection.js:525:10)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'mydb.sp_manager\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql:
+   'SELECT `mg_id`, `mg_name`, `mg_pwd`, `mg_time`, `role_id`, `mg_mobile`, `mg_email`, `mg_state` FROM `sp_manager` WHERE `mg_name` = \'admin\' LIMIT 1' }
+[2020-01-06T22:11:52.995] [DEBUG] cheese - 查询失败
+[2020-01-06T22:15:24.618] [DEBUG] cheese - login => username:admin,password:123456
+[2020-01-06T22:15:24.622] [DEBUG] cheese - admin
+[2020-01-06T22:15:24.636] [DEBUG] cheese - null
+[2020-01-06T22:15:24.637] [DEBUG] cheese - null
+[2020-01-07T22:44:35.653] [DEBUG] cheese - login => username:fdsafa,password:fdasfa
+[2020-01-07T22:44:35.656] [DEBUG] cheese - fdsafa
+[2020-01-07T22:44:35.672] [DEBUG] cheese - null
+[2020-01-07T22:44:35.672] [DEBUG] cheese - null
+[2020-01-07T22:44:50.043] [DEBUG] cheese - login => username:fdsafa,password:fdasfa
+[2020-01-07T22:44:50.043] [DEBUG] cheese - fdsafa
+[2020-01-07T22:44:50.047] [DEBUG] cheese - null
+[2020-01-07T22:44:50.048] [DEBUG] cheese - null
+[2020-01-07T22:47:32.086] [DEBUG] cheese - login => username:admin,password:123456
+[2020-01-07T22:47:32.086] [DEBUG] cheese - admin
+[2020-01-07T22:47:32.093] [DEBUG] cheese - null
+[2020-01-07T22:47:32.093] [DEBUG] cheese - null
+[2020-01-07T22:47:54.170] [DEBUG] cheese - login => username:fdasf,password:fdsaf
+[2020-01-07T22:47:54.171] [DEBUG] cheese - fdasf
+[2020-01-07T22:47:54.175] [DEBUG] cheese - null
+[2020-01-07T22:47:54.175] [DEBUG] cheese - null
+[2020-01-07T22:48:27.290] [DEBUG] cheese - login => username:admin,password:123456
+[2020-01-07T22:48:27.290] [DEBUG] cheese - admin
+[2020-01-07T22:48:27.297] [DEBUG] cheese - null
+[2020-01-07T22:48:27.297] [DEBUG] cheese - null
+[2020-01-07T22:55:27.616] [DEBUG] cheese - login => username:fdasfda,password:fdsafas
+[2020-01-07T22:55:27.616] [DEBUG] cheese - fdasfda
+[2020-01-07T22:55:27.620] [DEBUG] cheese - null
+[2020-01-07T22:55:27.620] [DEBUG] cheese - null
+[2020-01-07T22:55:41.901] [DEBUG] cheese - login => username:admin,password:123456
+[2020-01-07T22:55:41.901] [DEBUG] cheese - admin
+[2020-01-07T22:55:41.907] [DEBUG] cheese - null
+[2020-01-07T22:55:41.907] [DEBUG] cheese - null
+[2020-01-07T23:05:51.852] [DEBUG] cheese - login => username:admin,password:123456
+[2020-01-07T23:05:51.852] [DEBUG] cheese - admin
+[2020-01-07T23:05:51.856] [DEBUG] cheese - null
+[2020-01-07T23:05:51.856] [DEBUG] cheese - null
+[2020-01-07T23:08:50.449] [DEBUG] cheese - login => username:admin,password:123456
+[2020-01-07T23:08:50.450] [DEBUG] cheese - admin
+[2020-01-07T23:08:50.452] [DEBUG] cheese - null
+[2020-01-07T23:08:50.453] [DEBUG] cheese - null
+[2020-01-07T23:09:51.463] [DEBUG] cheese - login => username:admin,password:123456
+[2020-01-07T23:09:51.464] [DEBUG] cheese - admin
+[2020-01-07T23:09:51.466] [DEBUG] cheese - null
+[2020-01-07T23:09:51.466] [DEBUG] cheese - null
+[2020-01-08T21:49:53.643] [DEBUG] cheese - login => username:admin,password:123456
+[2020-01-08T21:49:53.645] [DEBUG] cheese - admin
+[2020-01-08T21:49:53.656] [DEBUG] cheese - login => username:admin,password:123456
+[2020-01-08T21:49:53.656] [DEBUG] cheese - admin
+[2020-01-08T21:49:53.665] [DEBUG] cheese - null
+[2020-01-08T21:49:53.666] [DEBUG] cheese - null
+[2020-01-08T21:49:53.791] [DEBUG] cheese - null
+[2020-01-08T21:49:53.791] [DEBUG] cheese - null
+[2020-01-08T21:50:07.818] [DEBUG] cheese - login => username:admin,password:123456
+[2020-01-08T21:50:07.818] [DEBUG] cheese - admin
+[2020-01-08T21:50:07.823] [DEBUG] cheese - null
+[2020-01-08T21:50:07.823] [DEBUG] cheese - null
+[2020-01-08T22:07:41.807] [DEBUG] cheese - login => username:admin,password:123456
+[2020-01-08T22:07:41.807] [DEBUG] cheese - admin
+[2020-01-08T22:07:41.814] [DEBUG] cheese - null
+[2020-01-08T22:07:41.815] [DEBUG] cheese - null
+[2020-01-08T22:33:10.628] [DEBUG] cheese - login => username:admin,password:123456
+[2020-01-08T22:33:10.628] [DEBUG] cheese - admin
+[2020-01-08T22:33:10.631] [DEBUG] cheese - null
+[2020-01-08T22:33:10.632] [DEBUG] cheese - null
+[2020-01-08T23:20:21.114] [DEBUG] cheese - login => username:admin,password:123456
+[2020-01-08T23:20:21.114] [DEBUG] cheese - admin
+[2020-01-08T23:20:21.120] [DEBUG] cheese - null
+[2020-01-08T23:20:21.120] [DEBUG] cheese - null
+[2020-01-08T23:20:25.147] [DEBUG] cheese - login => username:admin,password:123456
+[2020-01-08T23:20:25.147] [DEBUG] cheese - admin
+[2020-01-08T23:20:25.155] [DEBUG] cheese - null
+[2020-01-08T23:20:25.155] [DEBUG] cheese - null
+[2020-01-08T23:20:39.649] [DEBUG] cheese - login => username:admin,password:123456
+[2020-01-08T23:20:39.649] [DEBUG] cheese - admin
+[2020-01-08T23:20:39.653] [DEBUG] cheese - null
+[2020-01-08T23:20:39.653] [DEBUG] cheese - null
+[2020-01-08T23:20:42.818] [DEBUG] cheese - login => username:admin,password:123456
+[2020-01-08T23:20:42.818] [DEBUG] cheese - admin
+[2020-01-08T23:20:42.828] [DEBUG] cheese - null
+[2020-01-08T23:20:42.830] [DEBUG] cheese - null
+[2020-01-08T23:20:45.160] [DEBUG] cheese - login => username:admin,password:123456
+[2020-01-08T23:20:45.160] [DEBUG] cheese - admin
+[2020-01-08T23:20:45.170] [DEBUG] cheese - null
+[2020-01-08T23:20:45.170] [DEBUG] cheese - null
+[2020-01-08T23:20:52.113] [DEBUG] cheese - login => username:admin,password:123456
+[2020-01-08T23:20:52.113] [DEBUG] cheese - admin
+[2020-01-08T23:20:52.119] [DEBUG] cheese - null
+[2020-01-08T23:20:52.119] [DEBUG] cheese - null
+[2020-01-13T21:11:51.933] [DEBUG] cheese - login => username:admin,password:123456
+[2020-01-13T21:11:51.936] [DEBUG] cheese - admin
+[2020-01-13T21:11:51.952] [DEBUG] cheese - null
+[2020-01-13T21:11:51.953] [DEBUG] cheese - null
+[2020-02-04T09:06:07.303] [DEBUG] cheese - login => username:admin,password:123456
+[2020-02-04T09:06:07.307] [DEBUG] cheese - admin
+[2020-02-04T09:06:07.328] [DEBUG] cheese - null
+[2020-02-04T09:06:07.328] [DEBUG] cheese - null
+[2020-02-07T17:32:13.658] [DEBUG] cheese - login => username:admin,password:123456
+[2020-02-07T17:32:13.660] [DEBUG] cheese - admin
+[2020-02-07T17:32:13.691] [DEBUG] cheese - null
+[2020-02-07T17:32:13.692] [DEBUG] cheese - null
+[2020-02-07T17:56:19.076] [DEBUG] cheese - login => username:admin,password:123456
+[2020-02-07T17:56:19.076] [DEBUG] cheese - admin
+[2020-02-07T17:56:19.083] [DEBUG] cheese - null
+[2020-02-07T17:56:19.083] [DEBUG] cheese - null
+[2020-03-28T00:49:50.681] [DEBUG] cheese - login => username:范德萨,password:dfas 
+[2020-03-28T00:49:50.686] [DEBUG] cheese - 范德萨
+[2020-03-28T00:49:50.700] [DEBUG] cheese - null
+[2020-03-28T00:49:50.701] [DEBUG] cheese - null
+[2020-03-28T00:50:03.944] [DEBUG] cheese - login => username:admin,password:admin
+[2020-03-28T00:50:03.944] [DEBUG] cheese - admin
+[2020-03-28T00:50:03.956] [DEBUG] cheese - null
+[2020-03-28T00:50:03.956] [DEBUG] cheese - null
+[2020-03-28T00:50:14.142] [DEBUG] cheese - login => username:admin,password:admin
+[2020-03-28T00:50:14.142] [DEBUG] cheese - admin
+[2020-03-28T00:50:14.145] [DEBUG] cheese - null
+[2020-03-28T00:50:14.145] [DEBUG] cheese - null
+[2020-03-28T00:51:58.589] [DEBUG] cheese - login => username:admin,password:123456
+[2020-03-28T00:51:58.589] [DEBUG] cheese - admin
+[2020-03-28T00:51:58.613] [DEBUG] cheese - null
+[2020-03-28T00:51:58.613] [DEBUG] cheese - null
